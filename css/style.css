@@ -7,6 +7,8 @@ body { /*Establece el estilo para el cuerpo del documento*/
     font-size: 23px; /*Establece el tamaño de la letra*/
 }
 
+
+
 .container {
     position: relative; /* Establece la posición relativa */
     height: 300px; /* Ajusta la altura del contenedor según la imagen */
@@ -18,13 +20,21 @@ h1 {
     color: rgb(189, 87, 87); /*Establece el color del título*/
 }
 
+p{
+    color:rgb(189, 87, 87);
+    font-size:30px;
+}
+
+
+
 .text-overlay {
     position: absolute; /* Establece la posición absoluta */
-    top: 50%; /* Coloca el texto en la mitad superior */
+    top: 75%; /* Coloca el texto en la mitad superior */
     left: 50%; /* Centra horizontalmente el texto */
     transform: translate(-50%, -50%); /* Centra el texto */
     text-align: center; /* Centra el texto horizontalmente */
     color: white; /* Color de texto blanco */
+
 }
 
 .imgNavidad {
@@ -32,6 +42,7 @@ h1 {
     height: 100%; /* Ocupa toda la altura del contenedor */
     opacity: 0.4; /* Establece la opacidad de la imagen */
     z-index: -1; /* Coloca la imagen detrás del texto */
+    padding: 2px;
 }
 
 .menu ul li {
@@ -43,6 +54,16 @@ h1 {
     color: rgb(206, 113, 113); /*Establece el color de las opciones del menú*/
 }
 
+.menu ul li a:hover{
+    color:#ccc4c4; /*Cambia el color cuando el ratón está encima*/
+}
+
+.menu ul li a:active{
+    color:#6e2f2f; /*Cambia el color cuando está siendo activado*/
+}
+
+
+
 .header, .footer { /* Establece el estilo para el encabezado y el pie de página */
     width: 100%; /* Ocupa todo el ancho de la página */
     color: white; /* Texto de color blanco */
@@ -53,41 +74,93 @@ h1 {
 
 .header { /* Establece el estilo para el encabezado */
     background: #333232; /* Color de fondo oscuro */
-    padding: 30px 0;
+    padding: 10px 0;
     margin-bottom: 5px;
 }
 
-.main-content { /* Establece el estilo para el contenido principal */
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .special{
+    color: rgb(206, 113, 113);
+  }
+
+
+
+ .main-content { /* Establece el estilo para el contenido principal */
     display: flex; /* Flexbox para el diseño */
     justify-content: space-between; /* Espacio uniforme entre las columnas */
     width: 90%; /* Ocupa el 95% del ancho de la página */
-    margin: 100px; /* Añade margen arriba */     
-}
+    margin: 160px; /* Añade margen arriba */     
+  }
 
-.main-content .column { /* Establece el estilo para las columnas */
+ .main-content .column { /* Establece el estilo para las columnas */
     display: flex; /* Flexbox para el diseño */
     background: #ccc4c4; /* Fondo gris claro */
     margin: 50px; /* Añade márgenes */  
-}
+  }
 
 .column1 { /* Establece el estilo para la primera columna */
     width: 40%; /* Ocupar el 30% del ancho de la página */
     background: #ccc4c4; /* Fondo gris claro */
+    padding: 35px; /*Establece márgenes*/
+    display: flex; /* Flexbox para el diseño */
+    flex-direction: column;
 }
+
+
 
 .column2 { /* Establece el estilo para la segunda columna */
     width: 90%; /* Ocupa el 60% del ancho de la página */
     background: #e2dbdb;  /* Fondo gris más claro */
-    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    justify-content: space-between; /*Espacio uniforme entre los elementos */
+    padding: 35px; /*Establece márgenes*/
 }
 
 .imgColumn {
-    display: inline-block; /* Flexbox para el diseño, aparecen en línea*/
+    display: inline-block; /*Flexbox para el diseño, aparecen en línea*/
+    text-align: center; /*centra las imágenres*/
 }
+
 
 img {
     width: 200px; /*Establece el ancho de las imágenes */
 }
+
+@keyframes desplazamientoDerecha {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 1200px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+    
+    .anime{
+        position: relative; /* Asegura que el posicionamiento funcione correctamente */
+        width: 250px; /* Ajusta el ancho según tus necesidades */
+        height: 150px; /* Ajusta la altura según tus necesidades */
+        animation: desplazamientoDerecha 100s ease infinite;
+        /* Ajusta la duración de la animación, el tipo de aceleración (ease), y si se repite (infinite) según tus necesidades */
+        padding: 20px;
+  }
+
 
 .footer { /* Establece el estilo para el pie de página */
     background: #6e6b6b; /* Fondo gris oscuro para el footer */
