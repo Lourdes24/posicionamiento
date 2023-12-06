@@ -20,7 +20,7 @@ h1 {
     color: rgb(189, 87, 87); /*Establece el color del título*/
 }
 
-p{
+.text-overlay2{
     color:rgb(189, 87, 87);
     font-size:30px;
 }
@@ -118,7 +118,7 @@ table {
     background: #ccc4c4; /* Fondo gris claro */
     padding: 35px; /*Establece márgenes*/
     display: flex; /* Flexbox para el diseño */
-    flex-direction: column;
+    flex-direction: column; /*Diseño en columna(vertical)*/
 }
 
 
@@ -127,17 +127,34 @@ table {
     width: 90%; /* Ocupa el 60% del ancho de la página */
     background: #e2dbdb;  /* Fondo gris más claro */
     justify-content: space-between; /*Espacio uniforme entre los elementos */
+    display:flex; /*Flexbox para el diseño*/
+    flex-direction: column; /*Diseño en columna(vertical)*/
     padding: 35px; /*Establece márgenes*/
+    
+}
+
+.quiz{
+  background-color:  #e2dbdb;
+  text-align: center;
+  font-size: 30px;
 }
 
 .imgColumn {
     display: inline-block; /*Flexbox para el diseño, aparecen en línea*/
-    text-align: center; /*centra las imágenres*/
+    justify-content: space-between; /*Espacio uniforme entre los elementos */
+    text-align:center; /*Centra las imágenes con respecto al texto*/
+   
+    
+}
+.imgColumn1 {
+  text-align: center; /*centra las imágenes*/
+  width: 550px; /*Establece el ancho de las imágenes */
+   justify-content: space-between; /*Espacio uniforme entre los elementos */
 }
 
-
 img {
-    width: 200px; /*Establece el ancho de las imágenes */
+    width: 150px; /*Establece el ancho de las imágenes */
+    
 }
 
 @keyframes desplazamientoDerecha {
@@ -155,7 +172,7 @@ img {
     .anime{
         position: relative; /* Asegura que el posicionamiento funcione correctamente */
         width: 250px; /* Ajusta el ancho según tus necesidades */
-        height: 150px; /* Ajusta la altura según tus necesidades */
+        height: 200px; /* Ajusta la altura según tus necesidades */
         animation: desplazamientoDerecha 100s ease infinite;
         /* Ajusta la duración de la animación, el tipo de aceleración (ease), y si se repite (infinite) según tus necesidades */
         padding: 20px;
@@ -164,4 +181,5 @@ img {
 
 .footer { /* Establece el estilo para el pie de página */
     background: #6e6b6b; /* Fondo gris oscuro para el footer */
+    /*position: fixed;Fija el contenido*/
 }

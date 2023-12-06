@@ -24,7 +24,7 @@
         <img class="imgNavidad" src="./img/img_cabecera.jpg" alt="Imagen de plato navideño">
         <div class="text-overlay">
             <h1>Ideas para hacer tu navidad más fácil.</h1>
-            <p>¿Necesitas ideas para estas navidades? Aquí te ofrecemos ideas, <b>¡Quédate!</b></p>
+            <p class="text-overlay2">¿Necesitas ideas para estas navidades? Aquí te ofrecemos ideas, <b>¡Quédate!</b></p>
             
            
         </div>
@@ -38,9 +38,9 @@
                  de los elementos imprescindibles que marcan estas fechas. </p>
                 
                 <ul>
-                    <li>Veremos los <b>menús</b>, importante para las reuniones, </li>
-                    <li>De igual importancia, tenemos las bebidas espitituosas, ahí puedes encontrar los <b>cócteles</b>, ¡anímate a probarlos!</li>
-                    <li>¿No sabes qué regalar? Veremos los <b>relagos</b> más originales que nunca jamás imaginarías.</li>
+                    <li>Veremos los <strong>menús</strong>, importante para las reuniones, </li>
+                    <li>De igual importancia, tenemos las bebidas espitituosas, ahí puedes encontrar los <strong>cócteles</strong>, ¡anímate a probarlos!</li>
+                    <li>¿No sabes qué regalar? Veremos los <strong>relagos</strong> más originales que nunca jamás imaginarías.</li>
                  </ul>
             </div>  <!--cierre info-->
 
@@ -102,14 +102,21 @@
                     </tr>
                   </table>
             </div> <!--cierre infotable-->
+            <div>
+                <figure>
+                    <img class="imgColumn1" src="./img/img_0.jpg" alt="Decoración navidad.">
+                    <figcaption>Decoración navidad. </figcaption> <!--Pie de foto-->
+                </figure>
+            </div> <!--Cierre div figure-->
         </div> <!--cierre column column1-->
    
 
         <div class="column column2"> <!-- Segunda columna -->
+            <div class="allImg"> 
             <div class="imgColumn"><a target="_blank" href="https://www.pinterest.es/guillencervante/menus-navide%C3%B1os/">Recetas</a>
                 <figure>
                     <img src="./img/img_1.jpg" alt="Imagen de plato navideño">
-                    <figcaption>Imagen de plato navideño. </figcaption>
+                    <figcaption>Imágen de plato navideño. </figcaption>
                 </figure>
             </div>
 
@@ -126,10 +133,55 @@
                 <figcaption>Imagen de regalos en navidad. </figcaption>
             </figure>
             </div>
+        </div> <!--Cierre allImg-->
+            <div class="quiz">
+                <p>¿Te ha parecido interesante este blog?</p>
+    
+                <label>
+                    <input type="radio" class="input-checkbox" />
+                    Sí 
+                </label>
+    
+                <label>
+                    <input type="radio" class="input-checkbox" />
+                    No
+                </label> 
+                <br> <br><!--Establece salto de línea-->
+
+                <label for="puntuacion">Puntúanos</label>
+                <select id="puntuacion" name="puntuacion" required>  
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+
+            <div id="contact">
+                <h3>Ponte en contacto con nosotros</h3>
+                <label for="comentario">Comentario:</label><br>
+                <textarea id="comentario" name="comentario"  placeholder="Escribe tu comentario"  rows="4" cols="50"></textarea><br>
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono"  placeholder="Teléfono de contacto" name="telefono"><br>
+                <label for="email">Email de contacto:  </label>
+                <input type="text" id="direccion"  placeholder="Escribe tu mail" name="direccion"><br>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>    
+            </div> <!--cierre quitz-->
+            
         </div> <!--Cierre column column2-->
         
+        
+        
     </div> <!--cierre main-container-->
-    <img class="anime" src="./img/img_4.jpg" alt="Imagen de regalos en navidad">
-    <div class="footer">&copy; 2023. Hecho con espíritu.</div> <!-- Pie de página de la página -->
+    <img class="anime" src="./img/img_4.webp" alt="Imagen de regalos en navidad">
+    <div class="footer">&copy; 2023. Lourdes Ocaña Contreras. Hecho con espíritu.</div> <!-- Pie de página de la página -->
 </body>
 </html>
