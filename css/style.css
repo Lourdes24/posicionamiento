@@ -7,8 +7,6 @@ body { /*Establece el estilo para el cuerpo del documento*/
     font-size: 23px; /*Establece el tamaño de la letra*/
 }
 
-
-
 .container {
     position: relative; /* Establece la posición relativa */
     height: 300px; /* Ajusta la altura del contenedor según la imagen */
@@ -25,9 +23,8 @@ h1 {
     font-size:30px;
 }
 
-
-
 .text-overlay {
+  padding-top: 90px;
     position: absolute; /* Establece la posición absoluta */
     top: 75%; /* Coloca el texto en la mitad superior */
     left: 50%; /* Centra horizontalmente el texto */
@@ -45,17 +42,26 @@ h1 {
     padding: 2px;
 }
 
+.header p{
+  font-size: 23px;
+}
+
 .menu ul li {
     display: inline-block;
     margin-right: 20px; 
+    
 }
 
 .menu ul li a {
     color: rgb(206, 113, 113); /*Establece el color de las opciones del menú*/
+    text-decoration: none; /*Elimina el subrayado de los enlaces*/
 }
 
 .menu ul li a:hover{
-    color:#ccc4c4; /*Cambia el color cuando el ratón está encima*/
+    color:#333232; /*Cambia el color cuando el ratón está encima*/
+    background-color: #ccc4c4; /*Resalte cuando el ratón está encima*/
+    padding: 10px;
+    border-radius: 20%; /*Redondea*/
 }
 
 .menu ul li a:active{
@@ -78,8 +84,9 @@ h1 {
     margin-bottom: 5px;
 }
 
-
-
+span:hover{
+    background-color: rgb(206, 113, 113);
+}
 table {
     border-collapse: collapse;
     width: 100%;
@@ -98,8 +105,6 @@ table {
     color: rgb(206, 113, 113);
   }
 
-
-
  .main-content { /* Establece el estilo para el contenido principal */
     display: flex; /* Flexbox para el diseño */
     justify-content: space-between; /* Espacio uniforme entre las columnas */
@@ -110,7 +115,7 @@ table {
  .main-content .column { /* Establece el estilo para las columnas */
     display: flex; /* Flexbox para el diseño */
     background: #ccc4c4; /* Fondo gris claro */
-    margin: 50px; /* Añade márgenes */  
+    margin: 20px; /* Añade márgenes */  
   }
 
 .column1 { /* Establece el estilo para la primera columna */
@@ -133,29 +138,52 @@ table {
     
 }
 
-.quiz{
-  background-color:  #e2dbdb;
-  text-align: center;
-  font-size: 30px;
-}
-
 .imgColumn {
-    display: inline-block; /*Flexbox para el diseño, aparecen en línea*/
-    justify-content: space-between; /*Espacio uniforme entre los elementos */
-    text-align:center; /*Centra las imágenes con respecto al texto*/
-   
-    
+  display: inline-block; /*Flexbox para el diseño, aparecen en línea*/
+
+  justify-content: space-evenly; /*Espacio uniforme entre los elementos */
+  text-align:center; /*Centra las imágenes con respecto al texto*/ 
 }
 .imgColumn1 {
-  text-align: center; /*centra las imágenes*/
   width: 550px; /*Establece el ancho de las imágenes */
-   justify-content: space-between; /*Espacio uniforme entre los elementos */
 }
 
 img {
     width: 150px; /*Establece el ancho de las imágenes */
-    
 }
+
+.quiz{
+  background-color:  #e2dbdb;/*Color de fondo del formulario*/
+  text-align: center;
+  font-size: 30px;
+}
+
+#puntuacion{ /*Establece las medidas de la caja puntuación*/
+  width: 60px;
+  height: 40px;
+  font-size: 25px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="radio"],
+input[type="checkbox"]{     /*Establece las medidas para los input(cajas formulario)*/
+  width: 290px;
+  height: 30px;
+  font-size: 25px;
+  margin: 10px;
+}
+
+input[type="textarea"]{
+  margin: 80px;
+}
+
+input[type="submit"]{ /*Modifica el tamaño del botón enviar*/
+  font-size: 80%;
+  margin: 50px;
+}
+
+
 
 @keyframes desplazamientoDerecha {
     0% {
@@ -171,15 +199,15 @@ img {
     
     .anime{
         position: relative; /* Asegura que el posicionamiento funcione correctamente */
-        width: 250px; /* Ajusta el ancho según tus necesidades */
-        height: 200px; /* Ajusta la altura según tus necesidades */
+        width: 500px; /* Ajusta el ancho según tus necesidades */
+        height: 350px; /* Ajusta la altura según tus necesidades */
         animation: desplazamientoDerecha 100s ease infinite;
         /* Ajusta la duración de la animación, el tipo de aceleración (ease), y si se repite (infinite) según tus necesidades */
-        padding: 20px;
+        margin-bottom: 110px;
   }
 
 
 .footer { /* Establece el estilo para el pie de página */
     background: #6e6b6b; /* Fondo gris oscuro para el footer */
-    /*position: fixed;Fija el contenido*/
+    /*position: fixed; Fija el contenido*/
 }

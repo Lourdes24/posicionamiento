@@ -10,11 +10,10 @@
 <body>
     <div class="container">
         
-        
-        
         <div class="header">
-            Ideas para Navidad 
+            <p>Ideas para Navidad</p>
             <nav class="menu"> 
+                
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Contacto</a></li>
@@ -24,8 +23,7 @@
         <img class="imgNavidad" src="./img/img_cabecera.jpg" alt="Imagen de plato navideño">
         <div class="text-overlay">
             <h1>Ideas para hacer tu navidad más fácil.</h1>
-            <p class="text-overlay2">¿Necesitas ideas para estas navidades? Aquí te ofrecemos ideas, <b>¡Quédate!</b></p>
-            
+            <p class="text-overlay2">¿Necesitas ideas para estas navidades? Aquí te ofrecemos ideas, <b>¡Quédate!</b></p> 
            
         </div>
     </div>
@@ -34,13 +32,14 @@
     <div class="main-content">
         <div class="column column1"> <!-- Primera columna -->
             <div class="info">
+                <h3>Imprescindibles en navidad:</h3>
                 <p>Falta poco para navidad y vamos a entrar en la temática 
                  de los elementos imprescindibles que marcan estas fechas. </p>
                 
                 <ul>
-                    <li>Veremos los <strong>menús</strong>, importante para las reuniones, </li>
-                    <li>De igual importancia, tenemos las bebidas espitituosas, ahí puedes encontrar los <strong>cócteles</strong>, ¡anímate a probarlos!</li>
-                    <li>¿No sabes qué regalar? Veremos los <strong>relagos</strong> más originales que nunca jamás imaginarías.</li>
+                    <li>Veremos los <span><strong>menús</strong></span>, importante para las reuniones, </li>
+                    <li>De igual importancia, tenemos las bebidas espitituosas, ahí puedes encontrar los <span><strong>cócteles</strong></span>, ¡anímate a probarlos!</li>
+                    <li>¿No sabes qué regalar? Veremos los <span><strong>regalos</strong></span> más originales que nunca jamás imaginarías.</li>
                  </ul>
             </div>  <!--cierre info-->
 
@@ -112,70 +111,84 @@
    
 
         <div class="column column2"> <!-- Segunda columna -->
+            <h3>Te sugerimos...</h3>
             <div class="allImg"> 
-            <div class="imgColumn"><a target="_blank" href="https://www.pinterest.es/guillencervante/menus-navide%C3%B1os/">Recetas</a>
-                <figure>
-                    <img src="./img/img_1.jpg" alt="Imagen de plato navideño">
-                    <figcaption>Imágen de plato navideño. </figcaption>
-                </figure>
-            </div>
+                <div class="imgColumn"><a target="_blank" href="https://www.pinterest.es/guillencervante/menus-navide%C3%B1os/">Recetas</a>
+                    <figure>
+                        <img src="./img/img_1.jpg" alt="Imagen de plato navideño">
+                        <figcaption>Imágen de plato navideño. </figcaption>
+                    </figure>
+                </div>
 
-            <div class="imgColumn"><a target="_blank" href="https://saborgourmet.com/cocteles-de-navidad/">Cócteles</a>
-                <figure>
-                    <img src="./img/img_2.jpg" alt="Imagen de cóctel">
-                    <figcaption>Imagen de cóctel. </figcaption>
-                </figure>
-            </div>
+                <div class="imgColumn"><a target="_blank" href="https://saborgourmet.com/cocteles-de-navidad/">Cócteles</a>
+                    <figure>
+                        <img src="./img/img_2.jpg" alt="Imagen de cóctel">
+                        <figcaption>Imagen de cóctel. </figcaption>
+                    </figure>
+                </div>
 
-            <div class="imgColumn"><a target="_blank" href="https://www.pinterest.es/pin/Ad3LzRrSS_ZZKdINHZZwgT5HxdaBzeYw27To-8HVCQEahc0bA0ief1REWTBfBJirBRo-e2MroM-swbP8CBQVUdw/">Regalos</a>
-            <figure>
-                <img src="./img/img_3.jpg" alt="Imagen de regalos en navidad">
-                <figcaption>Imagen de regalos en navidad. </figcaption>
-            </figure>
-            </div>
+                <div class="imgColumn"><a target="_blank" href="https://www.pinterest.es/pin/Ad3LzRrSS_ZZKdINHZZwgT5HxdaBzeYw27To-8HVCQEahc0bA0ief1REWTBfBJirBRo-e2MroM-swbP8CBQVUdw/">Regalos</a>
+                <figure>
+                    <img src="./img/img_3.jpg" alt="Imagen de regalos en navidad">
+                    <figcaption>Imagen de regalos en navidad. </figcaption>
+                </figure>
+                </div>
+
         </div> <!--Cierre allImg-->
-            <div class="quiz">
-                <p>¿Te ha parecido interesante este blog?</p>
-    
-                <label>
-                    <input type="radio" class="input-checkbox" />
-                    Sí 
-                </label>
-    
-                <label>
-                    <input type="radio" class="input-checkbox" />
-                    No
-                </label> 
-                <br> <br><!--Establece salto de línea-->
 
-                <label for="puntuacion">Puntúanos</label>
-                <select id="puntuacion" name="puntuacion" required>  
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
+            <form class="quiz">
+                <fieldset>
+                    <h3>¿Te ha parecido interesante este blog?</h3>
+        
+                    <label>
+                        <input type="radio" name="interes" class="input-checkbox" />
+                        Sí 
+                    </label>
+        
+                    <label>
+                        <input type="radio" name="interes" class="input-checkbox" /> <!--Al poner el mismo name en ambos radio, sólo permite seleccionar una de ellas-->
+                        No
+                    </label> 
+                    <br> <br><!--Establece salto de línea-->
 
-            <div id="contact">
-                <h3>Ponte en contacto con nosotros</h3>
-                <label for="comentario">Comentario:</label><br>
-                <textarea id="comentario" name="comentario"  placeholder="Escribe tu comentario"  rows="4" cols="50"></textarea><br>
-                <label for="telefono">Teléfono de contacto:</label>
-                <input type="tel" id="telefono"  placeholder="Teléfono de contacto" name="telefono"><br>
-                <label for="email">Email de contacto:  </label>
-                <input type="text" id="direccion"  placeholder="Escribe tu mail" name="direccion"><br>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>    
-            </div> <!--cierre quitz-->
-            
+                    <label for="puntuacion">Puntúanos</label>
+                    <select id="puntuacion" name="puntuacion" required>  
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <div id="contact">
+                        <h3>Ponte en contacto con nosotros</h3>
+                        
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input type="tel" id="telefono"  placeholder="Teléfono" name="telefono"><br>
+                        
+                        <label for="email">Email de contacto:  </label>
+                        <input type="text" id="direccion"  placeholder="Mail" name="direccion"><br>
+
+                        <label class="textarea" for="comentario">Comentario:</label><br><br>
+                        <textarea type="textarea" id="comentario" name="comentario"  placeholder="Escribe tu comentario" rows="8" cols="75" ></textarea><br>
+                        
+                    </div>
+
+                    <div> <!--Botón de enviar-->
+                        <input type="submit" value="Enviar">
+                    </div> 
+
+                </fieldset> <!--cierre quitz-->
+
+            </form><!--Cierre del formulario-->
+
         </div> <!--Cierre column column2-->
         
         
